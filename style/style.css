@@ -118,7 +118,17 @@ body {
 
 /* Main */
 .main {
-  background: #2f303a;
+  width: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-main.jpg);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* background: #2f303a; */
 }
 
 .main-head {
@@ -250,6 +260,7 @@ body {
 /* Portfolio */
 
 /* Portfolio button section */
+
 .portfolio-button {
   font-family: inherit;
   font-weight: 500;
@@ -264,10 +275,16 @@ body {
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Portfolio photo section */
-
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
